@@ -17,7 +17,7 @@ export class IdentificationComponent implements OnInit  {
   }
 
   onClick(value: string) {
-    this.authenService.authentification(value); 
+    this.value = value; 
   }
 
 

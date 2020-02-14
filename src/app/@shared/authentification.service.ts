@@ -6,7 +6,9 @@ export class AuthentificationService {
   constructor() { }
 
   authentification(login : string){
-    this.user = { login : login };
+    if (this.user.login = login){
+
+    }
   }
 
   get() {
@@ -14,6 +16,6 @@ export class AuthentificationService {
   }
 }
 
-export class User {
-  login : string;
+export class User { 
+  login: string = 'Deuteros';
 }
