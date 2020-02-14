@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { IdentificationComponent } from './identification/identification.component';
 import { AuthentificationService } from './@shared/authentification.service';
 import { BoiteIdeeComponent } from './boite-idee/boite-idee.component';
-import { RouterModule, Routes} from './@angular/router';
+import { RouterModule, Routes} from '@angular/router';
 
 const rout : Routes =  [
   { path : 'boite-idee', component:BoiteIdeeComponent },
@@ -15,7 +15,7 @@ const rout : Routes =  [
 ]
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, NgModule, RouterModule.forRoot(rout) ],
+  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(rout) ],
   declarations: [ AppComponent, IdentificationComponent, BoiteIdeeComponent ],
   bootstrap:    [ AppComponent ],
   providers: [AuthentificationService]

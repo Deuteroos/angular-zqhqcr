@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { User } from '../models/User'
 
 @Injectable()
 export class AuthentificationService {
@@ -6,16 +7,10 @@ export class AuthentificationService {
   constructor() { }
 
   authentification(login : string){
-    if (this.user.login = login){
-
-    }
+   this.user = { login : login };
   }
 
-  get() {
+  getUser() {
     return this.user;
   }
-}
-
-export class User { 
-  login: string = 'Deuteros';
 }
